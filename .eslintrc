@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
+
+  "extends": ["standard", "standard-react", "eslint-config-prettier"],
+  "rules": {
+    "no-console": "off",
+    "camelcase": "off",
+    "object-curly-spacing": 0,
+    "indent": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/prop-types": 0,
+    "prefer-promise-reject-errors": "off",
+    "react/jsx-no-bind": "warn",
+    "react/no-did-update-set-state": "warn",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+    "space-before-function-paren": ["warn", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
+  },
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "Ab": false,
+    "_L": false,
+    "d3": false,
+    "AdminService": false,
+    "valueExists": false,
+    "workflow": false,
+    "_": false,
+    "ABDRAWING": false,
+    "DrawingSvgService": false,
+    "toJSON": false,
+    "GoogleAnalyticsService": false
+  },
+
+  "plugins": ["react", "jest", "react-hooks"]
+}
